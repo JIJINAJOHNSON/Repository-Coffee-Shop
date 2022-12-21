@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="coffee.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script defer src="coffee.js"></script>
+</head>
+<body>
+
+
+    <!--Navbar- starts here-->
+    <nav class="nav">
+        <ion-icon class="burger-btn" name="grid-outline"></ion-icon>
+        <h2 class="logo">Coffeecup</h2>
+        <div class="nav-menus">
+            <a href="#home">Home</a>
+            <a href="#product">Our Product</a>
+            <a href="#about">About</a>
+            <a href="#testimoni">Testimonial</a>
+        </div>
+
+        <div class="nav-right">
+            <ion-icon name="search-outline"></ion-icon>
+            <ion-icon name="cart-outline"></ion-icon>
+        </div>
+    </nav>
+
+    <!---Navbar ends here-->
+
+    <!--Header- starts here-->
+
+    <header>
+        <div class="header-top">
+            <div class="top-left">
+                <h1><span>Perfect</span> Time for <br> Perfect <span> Coffee</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, illum non, inventore pariatur assumenda 
+                    veniam excepturi ratione ab ex veritatis cumque aliquam nostrum praesentium 
+                    quis hic perferendis temporibus cupiditate provident?</p>
+                <button class="header-btn">See The Menus</button>
+            </div>
+
+            <div class="top-right">
+                <img src="c/breakfast.jpg" alt="">
+            </div>
+            <div class="header-bottom">
+                <div class="header-detail">
+                    <h2>30+</h2>
+                    <p>All of Menus</p>
+                </div>
+
+                <div class="header-detail">
+                    <h2>3,800+</h2>
+                    <p>Daily Orders</p>
+                </div>
+
+                <div class="header-detail">
+                    <h2>12+</h2>
+                    <p>Branch Stores</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </header>
+
+
+
+    <!---Header ends here-->
+
+    <!---Product starts here-->
+
+    <section class="product" id="product">
+        <h2 class="title">The Best Products We Have</h2>
+        <div class="product-filter" id="filter">
+            <button class="btn-filter is-checked" data-filter="*">All</button>   <!--mixitup-control-active-->
+            <button class="btn-filter" data-filter=".coffee">Coffee</button>
+            <button class="btn-filter" data-filter=".non-coffee">Non-Coffee</button>
+            <button class="btn-filter" data-filter=".cakes">Cakes</button>
+        </div>
+
+        <div class="product-list" data-ref="product-list">
+            <div class="product-card coffee" data-order="1">
+                <div class="product-image">
+                    <img src="c/cof.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>Different Varieties of Coffee</h4>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit illum facilis 
+                        facere aspernatur architecto dicta.</small>
+                    <div class="product-price">
+                        <p>$13.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card coffee" data-order="2">
+                <div class="product-image">
+                    <img src="c/fra.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>Frappe Coffee</h4>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit illum facilis 
+                        facere aspernatur architecto dicta.</small>
+                    <div class="product-price">
+                        <p>$13.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card non-coffee" data-order="3">
+                <div class="product-image">
+                    <img src="c/tea min.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4> Fresh Mint Tea</h4>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit illum facilis 
+                        facere aspernatur architecto dicta.</small>
+                    <div class="product-price">
+                        <p>$13.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card cakes" data-order="4">
+                <div class="product-image">
+                    <img src="c/cutcake.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>Pancackes with Barries</h4>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit illum facilis 
+                        facere aspernatur architecto dicta.</small>
+                    <div class="product-price">
+                        <p>$13.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card cakes" data-order="5">
+                <div class="product-image">
+                    <img src="c/cutrose.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>Stroberries Cupcakes</h4>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit illum facilis 
+                        facere aspernatur architecto dicta.</small>
+                    <div class="product-price">
+                        <p>$13.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card non-coffee" data-order="6">
+                <div class="product-image">
+                    <img src="c/tea le.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>Lemon Tea</h4>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit illum facilis 
+                        facere aspernatur architecto dicta.</small>
+                    <div class="product-price">
+                        <p>$13.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card coffee" data-order="7">
+                <div class="product-image">
+                    <img src="c/coff mo.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>Mocca</h4>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit illum facilis 
+                        facere aspernatur architecto dicta.</small>
+                    <div class="product-price">
+                        <p>$13.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card cakes" data-order="8">
+                <div class="product-image">
+                    <img src="c/cakes.jpg" alt="">
+                </div>
+                <div class="product-detail">
+                    <h4>Cheese Cake</h4>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit illum facilis 
+                        facere aspernatur architecto dicta.</small>
+                    <div class="product-price">
+                        <p>$13.5</p>
+                        <ion-icon class="heart" name="heart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---Product ends here-->
+
+    <!---Our Story starts here-->
+
+    <section class="story" id="about">
+        <div class="story-left">
+            <div class="story-column">
+                <img src="c/burg1.jpg" alt="">
+                <img src="c/chappathi.jpg" alt="">
+            </div>
+
+            <div class="story-column">
+                <img src="c/cold drinks.jpg" alt="">
+                <img src="c/fried rice.jpg" alt="">
+            </div>
+
+            <div class="story-column">
+                <img src="c/pizza.jpg" alt="">
+                <img src="c/porata.jpg" alt="">
+            </div>
+
+        </div>
+
+
+        <div class="story-right">
+            <h2 class="title">Our story for the best <br> Coffee in Town</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, debitis id. 
+                Hic itaque voluptates corrupti aliquam sit et iste est error, harum quod 
+                illo minima consequatur enim pariatur impedit delectus!</p>
+        </div>
+    </section>
+
+    <!----Our Story ends here-->
+
+    <!---Testimoni starts here-->
+
+    <section class="testimoni" id="testimoni">
+        <h2 class="title">Customer's say</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit. Nulla optio impedit ipsam, nisi voluptates
+                         quibusdam eius officiis placeat asperiores perspiciatis.</p>
+                    <div class="testimoni-pic">
+                        <img src="c/icecream.jpg" alt="">
+                        <h4>Naomi</h4>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit. Nulla optio impedit ipsam, nisi voluptates
+                         quibusdam eius officiis placeat asperiores perspiciatis.</p>
+                    <div class="testimoni-pic">
+                        <img src="c/field.jpg" alt="">
+                        <h4>Naomi</h4>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit. Nulla optio impedit ipsam, nisi voluptates
+                         quibusdam eius officiis placeat asperiores perspiciatis.</p>
+                    <div class="testimoni-pic">
+                        <img src="c/ice cream.jpg" alt="">
+                        <h4>Naomi</h4>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit. Nulla optio impedit ipsam, nisi voluptates
+                         quibusdam eius officiis placeat asperiores perspiciatis.</p>
+                    <div class="testimoni-pic">
+                        <img src="c/burg3.jpg" alt="">
+                        <h4>Naomi</h4>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit. Nulla optio impedit ipsam, nisi voluptates
+                         quibusdam eius officiis placeat asperiores perspiciatis.</p>
+                    <div class="testimoni-pic">
+                        <img src="c/lighter.jpg" alt="">
+                        <h4>Naomi</h4>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit. Nulla optio impedit ipsam, nisi voluptates
+                         quibusdam eius officiis placeat asperiores perspiciatis.</p>
+                    <div class="testimoni-pic">
+                        <img src="c/home.jpg" alt="">
+                        <h4>Naomi</h4>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit. Nulla optio impedit ipsam, nisi voluptates
+                         quibusdam eius officiis placeat asperiores perspiciatis.</p>
+                    <div class="testimoni-pic">
+                        <img src="c/moon.jpg" alt="">
+                        <h4>Naomi</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!----Testimoni ends here-->
+
+    <!----Footer Starts here-->
+
+    <footer>
+        <div class="footer-wrapper">
+            <h2 class="title">Let's drink your <br> Coffee with us</h2>
+            <div class="footer-desc">
+                <p>Do you want to explore more about us?</p>
+                <button class="footer-btn btn-type1">Contact Us</button>
+                <button class="footer-btn btn-type2">Our Product</button>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="footer-logo">CoffeeCup</div>
+        <div class="social-media">
+            <a href="#" class="media-icon"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="#" class="media-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#" class="media-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#" class="media-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <div class="copyright">Copyright &copy; 2022 CoffeeCup</div>
+    </footer>
+
+    <!----Footer ends here-->
+    
+</body>
+</html>
